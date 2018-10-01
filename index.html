@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<link rel="icon" href ="favicon.png" type= "image/x-icon">
+	
+	<script src="dist.js"></script>
+	
+    <title>Сетка боёв</title>
+
+</head>
+
+<body>
+
+    <div>
+        Необходимое количество боёв: <input type="number" id="fight-num" value="3" step="1" min="1" max="100"/>
+        <br/>
+        Максимальное число встреч двух команд: <input type="number" id="meet-max" value="1" step="1" min="1" max="100"/>
+        <br/>
+        Число команд в аудитории от: <input type="number" id="team-min" value="3" step="1" min="1" max="100"/>
+                                 до: <input type="number" id="team-max" value="4" step="1" min="1" max="100"/>
+        <br/>
+        Аудитории или их количество: <input type="text" id="room-num" value="5"/>
+        <br/>
+        Названия команд или их количество: <input type="text" id="team-num" value="14"/>
+        <br/>
+        (Аудитории и названия команд надо вводить через запятую)
+        <br/>
+        <button onclick="main()">Построить распределение</button>
+    </div>
+
+    <hr/>
+    
+    <div id="result"></div>
+   
+</body>
+
+</html>
